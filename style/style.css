@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  max-width: 94%;
+  margin: auto;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  line-height: 29.38px;
+  transition: transform 0.3s ease-in-out;
+}
+nav ul li a:hover {
+  transform: scale(1.2);
+  color: #00a8cc;
+}
+.container {
+  margin: auto;
+  max-width: 75%;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  max-width: 100%;
+}
+.banner_text {
+  flex: 0 0 50%;
+}
+.banner_text h1 {
+  font-size: 42px;
+  line-height: 60px;
+}
+.banner_text p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.banner_text button {
+  background-color: #ff6464;
+  color: #fff;
+  height: 47px;
+  width: 208px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.banner_text button:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  transform: scale(1.2);
+}
+.banner_img {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+}
+.details {
+  background-color: #edf7fa;
+  padding: 5px 0 60px 0;
+  margin: 50px 0;
+}
+.details_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.details_text h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000;
+}
+.details_text a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #00a8cc;
+  text-decoration: none;
+}
+.details_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  width: 50%;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+  color: #222;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38.19px;
+}
+.card .meta {
+  color: #21243d;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0;
+  line-height: 26.44px;
+}
+.card p {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+}
+.feature {
+  margin: 50px 0;
+}
+.featured-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.featured_card {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+.featured_card img {
+  width: unset;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.featured_card-content {
+  margin-left: 20px;
+}
+.featured_card-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+.badge {
+  background-color: #1c2948;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.category {
+  color: #98a6b3;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.featured_card-content p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 25px;
+}
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+footer .icon {
+  padding-bottom: 25px;
+}
+
+footer .icon img {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer .icon img:hover {
+  transform: scale(1.2);
+}
+
+footer .copyright {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  .card {
+    width: unset;
+  }
+  .featured_card img {
+    width: unset;
+  }
+  .featured_card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .featured_card-content {
+    text-align: center;
+  }
+  .details_cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner_text h1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.featured-title{
+    text-align: center;
+}
+}
+@media (max-width: 575px) {
+    .banner{
+        margin-top: 16px;
+    }
+}
